@@ -111,12 +111,13 @@ Frontend will start at: `http://localhost:3000`
 
 ---
 
-## 👨‍💻 Team Members  
+## 👥 Contributors
+We are grateful to the following contributors for their valuable efforts in making this possible:
 
-- **B.V.W Gunasinghe** – KUHDSE242F-006  
-- **P.P.S.R Pathirana** – KUHDSE242F-007  
-- **H.S.S Bandara** – KUHDSE242F-019  
-- **R.M.R Jayasanka** – KUHDSE242F-036  
+- [Viraj Wathsala Gunasinghe](https://github.com/virajwathsalag)
+- [Sachitha Samadhi Bandara](https://github.com/sachithasamadhib)
+- [Ravin Jayasanka](https://github.com/MrRaveen)
+- [Sanuja Rasanajna](https://github.com/SanujaRasanajna2007)
 
 ---
 
