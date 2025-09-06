@@ -1,4 +1,4 @@
-# 📦 Image Compressor Tool (PDSA)
+# 📦 Image Compressor Tool
 
 An **Image Compression Tool** that uses **Huffman Coding (Binary Tree based lossless compression)** to reduce image sizes without losing quality.  
 The project is built with a **Flask API backend** and a **React + Next.js frontend** for a modern, scalable, and interactive experience.  
