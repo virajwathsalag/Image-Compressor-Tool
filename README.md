@@ -67,7 +67,7 @@ Image-Compressor-Tool/
 
 ### 1. Clone Repository  
 ```bash
-git clone https://github.com/your-username/image-compressor-tool.git
+git clone https://github.com/virajwathsalag/image-compressor-tool.git
 cd image-compressor-tool
 ```
 
