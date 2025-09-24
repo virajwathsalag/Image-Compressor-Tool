@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 import os
 
 from Service.arrangeFiles import create_deque
+from Service.quicksort import quickSort
 
 app = Flask(__name__)
 
@@ -22,16 +23,25 @@ def upload_images(quality,maxSize,resize):
     if not image_files:
         return jsonify({'error' : 'No images selected for upload'}), 400
     
-    uploaded_filenames = []
+    uploaded_fileSize = []
     for file in image_files:
-        if file.filename != '':
-            uploaded_filenames.append(file.filename)
-    new_created_deque = create_deque(uploaded_filenames)     
-            
+        size = len(file.read())
+        file.seek(0)  # reset pointer
+        uploaded_fileSize.append(size)
+        
+    uploaded_files = []
+    for fileAll in image_files:
+          uploaded_files.append(fileAll)
+    
+    quickSort(uploaded_files,uploaded_fileSize,0,len(uploaded_fileSize) - 1)        
+    # return jsonify({
+    #     'message ': uploaded_fileSize,
+    #     'quality ': quality,
+    #     'max ': maxSize
+    #     }),200
+    
     return jsonify({
-        'message ': list(new_created_deque),
-        'quality ': quality,
-        'max ': maxSize
+        "values: " : uploaded_fileSize
         }),200
     
     
