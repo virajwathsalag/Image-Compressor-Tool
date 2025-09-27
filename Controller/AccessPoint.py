@@ -33,7 +33,7 @@ def upload_images(quality,maxSize,resize):
     for fileAll in image_files:
           uploaded_files.append(fileAll)
     
-    quickSort(uploaded_files,uploaded_fileSize,0,len(uploaded_fileSize) - 1)        
+    quickSort(uploaded_files,uploaded_fileSize,0,len(uploaded_fileSize) - 1)  
     # return jsonify({
     #     'message ': uploaded_fileSize,
     #     'quality ': quality,
