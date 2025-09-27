@@ -33,7 +33,9 @@ def upload_images(quality,maxSize,resize):
     for fileAll in image_files:
           uploaded_files.append(fileAll)
     
-    quickSort(uploaded_files,uploaded_fileSize,0,len(uploaded_fileSize) - 1)        
+    quickSort(uploaded_files,uploaded_fileSize,0,len(uploaded_fileSize) - 1)  
+    created_dequeue = create_deque(uploaded_files)   
+    fileNameDequeue = create_deque(uploaded_fileSize) 
     # return jsonify({
     #     'message ': uploaded_fileSize,
     #     'quality ': quality,
@@ -41,7 +43,7 @@ def upload_images(quality,maxSize,resize):
     #     }),200
     
     return jsonify({
-        "values: " : uploaded_fileSize
+        "values: " : list(fileNameDequeue)
         }),200
     
     
